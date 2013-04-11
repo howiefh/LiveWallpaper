@@ -1,0 +1,12 @@
+#!/bin/sh
+mkdir $1
+mv $2 $3
+if [ $4 ]
+then
+	mv $4 $5
+fi
+#if [ ! -e $4 ]  #判断$4为真
+#then
+#    echo $4 > $5
+#fi
+#touch $2
